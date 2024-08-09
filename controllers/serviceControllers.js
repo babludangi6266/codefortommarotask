@@ -42,7 +42,7 @@ res.json(service);
 const getServices=async (req,res)=>{
     const {categoryId}=req.params;
     const service = await Services.findAll({where:{categoryId},include:ServicePriceOpt});
-    res.json(services);
+    res.json(service);
 };
 
 const deleteService =async (req,res)=>{

@@ -9,9 +9,9 @@ const Services=sequelize.define('Service',{
         allowNull:false,
     },
     type:{
-         type:DataTypes.ENUM('NORMAL','VIP'),
-        // type:DataTypes.INTEGER,
+         type:DataTypes.ENUM('Normal,VIP'),
         allowNull:false,
+        
     },
     categoryId:{
         type:DataTypes.INTEGER,
